@@ -96,7 +96,7 @@ function enviarWhatsAppUltraMsg(numero, mensaje) {
 }
 
 // 📎 Función que muestra alerta si hay una pendiente al abrir la hoja
-function onOpen() {
+function mostrarAlertaPendiente() {
   const props = PropertiesService.getDocumentProperties();
   const alerta = props.getProperty("alertaPendiente");
 
