@@ -39,7 +39,10 @@ function generarDocumentoDesdeFila2024() {
   textoTitulo.setBold(inicioPatente, inicioPatente + patente.length - 1, true);
 
   // Contacto con separación y palabras clave en negrita
-  const [lineaVendedor, lineaComprador] = contacto.split("\n");
+  // Dividir el contacto en dos líneas (vendedor y comprador). Si la celda no
+  // contiene salto de línea se usan valores vacíos para evitar errores.
+  const [lineaVendedor = "", lineaComprador = ""] =
+    (contacto || "").toString().split("\n");
   const pV = body.appendParagraph(lineaVendedor).setFontSize(13).setSpacingBefore(10);
   const pC = body.appendParagraph(lineaComprador).setFontSize(13).setSpacingBefore(10);
   const tV = pV.editAsText();

@@ -19,6 +19,8 @@ This repository contains a collection of Google Apps Script files used with a Go
 2. Click the **Triggers** icon or navigate to **Triggers** from the left-hand menu.
 3. Add triggers for the desired functions (for example `onOpen` or `onEdit`).
    Choose the event source (such as "From spreadsheet") and the event type (e.g. "On open" or "On edit").
+4. *(Optional)* Create a daily time-based trigger for `verificarActivadoresOnOpen`.
+   This helper notifies you if multiple `onOpen` activators are found.
 
 ## Running scripts and tests
 
