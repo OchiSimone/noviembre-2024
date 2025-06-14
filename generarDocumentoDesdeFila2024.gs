@@ -69,11 +69,6 @@ function generarDocumentoDesdeFila2024() {
    const tagFlag = filaDatos[getCol("Tag")]?.toString().toLowerCase().trim() === 'si';
  
    // Construir texto base
-diff --git a/generarDocumentoDesdeFila2024.gs b/generarDocumentoDesdeFila2024.gs
-index 4ed9d05fd39f69236237fd73afda11be9040eb4e..fa151795c5873fae36af3a4aa71ed51c80de1a96 100644
---- a/generarDocumentoDesdeFila2024.gs
-+++ b/generarDocumentoDesdeFila2024.gs
-@@ -89,26 +92,26 @@ function generarDocumentoDesdeFila2024() {
    // TAG
    if (tagFlag) {
      parrafoTramite.appendText(" + TAG");
